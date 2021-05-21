@@ -59,12 +59,13 @@ const App = () => {
       peppers: formValues.peppers,
       instructions: formValues.instructions,
     }
-
+    console.log(newPizza.instructions)
     if(!newPizza.name || !newPizza.size ){
       return
     }
     setPizzaOrder([...pizzaOrder, newPizza])
     setFormValues(initialFormValues)
+   
 
   }
 
@@ -100,7 +101,14 @@ const App = () => {
                 disabled={disabled}
                 errors={formErrors}
               />
-              <UpcomingPizza values={formValues} />
+
+              {
+                pizzaOrder.map((order, idx) => {
+                  return (
+                    <UpcomingPizza key={idx} values={order} />
+                  )
+                })
+              }
             </>
           )
           

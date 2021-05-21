@@ -17,10 +17,10 @@ export default function BuildingPizza (props) {
 
 
     return (
-        <div className='lowerSection' onSubmit={onSubmit} >
+        <div className='lowerSection'  >
             <div className='builder'>
                 <h2>Your Pizza, Your Way</h2>
-                <form id='pizza-form'>
+                <form id='pizza-form' onSubmit={onSubmit} >
                     <div className='namesize'>
                         <label> Name
                         <input 
@@ -90,6 +90,8 @@ export default function BuildingPizza (props) {
                             type='text'
                             name='instructions'
                             id='special-text'
+                            onChange={onChange}
+                            value={values.instructions}
                         />
                     </label>
                     <br/>
