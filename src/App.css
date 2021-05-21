@@ -1,5 +1,6 @@
-.App {
+body {
   text-align: center;
+  background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg');
 }
 
 .App-logo {
@@ -13,26 +14,49 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+
+  
 }
+
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  color: #9DCE3D;
+  text-shadow: 5px 2px #0C51A2;
+}
+.navBar{
+  display: flex;
+  text-align: right;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  text-align: right;
+  width: 100%;
+  flex-direction: column;
+}
+ 
+nav a{
+  margin-right: 5%;
+  color: #9DCE3D;
+  text-decoration: none;
+  font-size: 1.8rem;
+  
+}
+
+#PPlogo{
+  margin-top: -25vh;
 }
