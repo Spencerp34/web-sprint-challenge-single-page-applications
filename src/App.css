@@ -82,4 +82,39 @@ input{
 form{
   display: flex; 
   justify-content: space-between;
+  flex-direction: column;
+}
+
+button{
+  color: #9DCE3D;
+  background-color: #0C51A2;
+  border: 5px solid #9DCE3D;
+  border-radius: 15%;
+  width: 20%;
+  height: 10vh;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: #9DCE3D;
+}
+
+.error{
+  color: red;
+}
+
+.queue{
+  display: flex;
+  justify-content: center;
+}
+.upcomingPizza{
+  background-color: rgba(66, 69, 75, 0.95);
+  width: 50%;
+  border-radius: 15px;
+  justify-content: center;
+  padding-bottom: 5vh;
+  margin-bottom: 5vh;
 }
