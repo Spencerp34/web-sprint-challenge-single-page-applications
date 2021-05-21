@@ -5,7 +5,7 @@ import PizzaBuilder from './components/BuildingPizza'
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <header className='header'>
         <div className='navBar'>
           <nav>
